@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="oszczędzanie, budżet domowy, portfel, zarządzanie pieniędzmi, wydatki, przychody, bilans, saldo" />
+    <link rel="stylesheet" href="css/fontello.css" type="text/css" />
+
+    <!--dropdownMenu navbar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <link rel="stylesheet" href="style.css">
+
+    <title>Aplikacja MyWallet</title>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div class="logo">
+            <header>
+                <h1><i class="icon-money"></i>MyWallet = Zarządzaj własnym budżetem</h1>
+            </header>
+        </div>
+       <nav>
+            <ul class="clearfix">
+                <li><a href="#"> <i class="icon-home"></i> Strona główna </a></li>
+                <li><a href="#"> <i class="icon-plus-circled"> </i> Dodaj przychód </a></li>
+                <li><a href="#"> <i class="icon-minus-circled"></i> Dodaj wydatek </a></li>
+                <li><a href="#"> <i class="icon-book-open"></i> Przeglądaj bilans </a></li>
+                <li><div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()"> <i class="icon-cog-outline"></i> Ustawienia
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#"> Edytuj dane </a>
+                        <a href="#"> Edytuj kategorie </a>
+                        <a href="#"> Usuń wpisy </a>
+                    </div>
+                </div></li>
+                <li><a href="#"> <i class="icon-logout-1"></i> Wyloguj się </a></li>
+
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <div class="content">
+                    <h2>Logowanie</h2>
+                </div>
+                <div class="log-in">
+                    <form action="">
+                        <label for="text">Login</label>
+                        <input type="text" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'" required>
+                        <label for="password"> Hasło</label>
+                        <input type="password" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'" required>
+                        <input type="submit" value="Zaloguj się">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <div>
+            <footer>
+                <p> Wszelkie prawa zastrzeżone &copy; 2021. Strona tworzona przy współpracy z PrzyszlyProgramista.pl</p>
+            </footer>
+        </div>
+    </div>
+    
+ <script src="dropdownNavBar.js" defer></script> 
+
+</body></html>
